@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300&family=Source+Sans+Pro:ital,wght@1,300;1,600&display=swap');
+*{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin:0;
+   padding:0;
+   box-sizing:border-box; 
+}
+body{
+ background:rgb(31, 28, 28);
+ /* display: flex; */
+ 
+}
+
+section{
+ position:relative;
+ display:flex;
+ justify-content:center;
+ align-items: center;
+ padding:120px 180px;
+ color:#fff;
+}
+.container{
+ position:relative;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ flex-direction:column;
+}
+.main-title{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size:4em;
+ margin-bottom:100px;
+ letter-spacing:8px;
+}
+.content{
+ position:relative;
+ width:1150px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}
+.content .image{
+ position:relative;
+ width:800px;
+ height:400px;
+ overflow:hidden;
+}
+ .content .image img {
+  z-index: 111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+ }
+ .content .textbox {
+  z-index: 222;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 400px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  transform: translate(-80px,80px);
+ }
+.content .textbox h3{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size:2em;
+ margin-bottom:10px;
+}
+.media-icons{
+ margin-top:100px;
+}
+.media-icons a{
+ color: #fff;
+ font-size:2em;
+ margin: 20px;
+}
+
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow: hidden;
+  padding-top: 60px;
+  transition: 0.7s;
+}
+
+.nav a {
+  display: block;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 25px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+.nav a:hover {
+  color: #fff;
+  transition: 0.4s;
+}
+
+.nav .close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  margin-left: 50px;
+  font-size: 30px;
+}
+
+.slide a {
+  color: white;
+  font-size: 36px;
+  position: fixed;
+}
+
+ #content {
+  padding: 20px;
+  transition: margin-left 0.7s;
+  overflow: hidden;
+}
+
+/* #main {
+  
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 10px;
+} */
+
+#text {
+  width: 90%;
+  padding: 5%;
+} 
+
+
+/* .dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+  font-size: 15px;
+  font-family:monserrat;
+} */
+
+/* Optional: Style the caret down icon */
+/* .fa-caret-down {
+  float: right;
+  padding-right: 8px;
+} */
+
+/* Style the sidenav links and the dropdown button */
+/* .dropdown-btn {
+padding: 20px 30px;
+text-decoration: none;
+font-size: 25px;
+font-family:monserrat;
+color: #ccc;
+display: block;
+border: none;
+background: none;
+width:100%;
+text-align: left;
+cursor: pointer;
+outline: none;
+}
+
+.dropdown-btn:hover {
+color: #fff;
+} */

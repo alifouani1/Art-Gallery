@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists</title>
+    <link rel="stylesheet" href="../css/ArtistCss/Artists.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <!-- <link rel="stylesheet" href="../css/indexCss/NavBar.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+  <div id="main">
+    <div id="content">
+    
+    <span class="slide">
+      <a href="#" onClick="openSlideMenu()">
+      <i class="fas fa-bars"></i>
+      </a>
+    </span>
+    
+    <div id="menu" class="nav">
+      <a href="#" class="close" onClick="closeSlideMenu()">
+      <i class="fas fa-times"></i>
+      </a>
+      <a href="../index.html">Home</a>
+      <a href="../views/Artist.html">Artists</a>
+      <!-- <button class="dropdown-btn">Categories
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="../views/Categories/Categories_images/Digital.html">Digital</a>
+        <a href="../views/Categories/Categories_images/Inked.html">Inked</a>
+        <a href="../views/Categories/Categories_images/Paintings.html">Paintings</a>
+      </div> -->
+      <a href="../views/Category.html">Categories</a>
+      <a href="../views/About.html">About</a>
+      <a href="../views/ContactUs.html">Contact</a>
+    </div>
+  </div>
+  </div>
+
+    <!-- Sidebar -->
+<!-- <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  </div> -->
+  
+  <!-- Page Content -->
+  <!-- <div class="w3-teal">
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  </div> -->
+
+    <!-- <div id="mySidenav" class="sidenav">
+        <a href="../index.html" id="home">Home</a>
+        <a href="../views/Category.html" id="categories">Categories</a>
+        <a href="../views/About.html" id="about">About</a>
+        <a href="../views/ContactUs.html" id="contact">Contact</a>
+    </div> -->
+<div class="artists">
+<section class="sec-01">
+  <div class="container">
+    <h2 class="main-title">Artists</h2>
+ <div class="content">
+ <div class="image">
+   <img id="artistImg0" src="" alt="artist1">
+ </div>
+ <div class="textbox">
+     <h3 id="artistName0"></h3>
+     <p id="artistDescription0"></p>
+  <div class="media-icons">
+      <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+  </div>
+ </div>
+   </div>
+  </div>
+  </section>
+  <section class="sec-02">
+  <div class="container">
+ <div class="content">
+ <div class="image">
+   <img id="artistImg1" src="" alt="artist2">
+ </div>
+ <div class="textbox">
+     <h3 id="artistName1"></h3>
+  <p id="artistDescription1"></p>
+
+  <div class="media-icons">
+      <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+  </div>
+ </div>
+   </div>
+   </div>
+  </section>
+  <section class="sec-03">
+  <div class="container">
+ <div class="content">
+ <div class="image">
+   <img id="artistImg2" src="" alt="artist3 ">
+ </div>
+ <div class="textbox">
+     <h3 id="artistName2"></h3>
+  <p id="artistDescription2"></p>
+
+  <div class="media-icons">
+      <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+  </div>
+ </div>
+   </div>
+  </div>
+  </section>
+</div>
+  
+<script type="text/javascript" src="../js/Artists.js"></script>
+
+<script>
+  
+let artists = [];
+
+async function getArtists() {
+  let x = await fetch('../data/artists.json');
+  artists = await x.json();
+  
+  for(var i = 0; i<3; i++){
+  document.getElementById('artistName'+i).innerHTML+=artists[i].name;
+  document.getElementById('artistDescription'+i).innerHTML+=artists[i].Description;
+  document.getElementById('artistImg'+i).src=artists[i].Image;
+}
+
+}
+
+getArtists();
+  
+
+</script>  
+
+
+</body>
+
+</html>

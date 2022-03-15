@@ -1,0 +1,21 @@
+[
+    {
+        "name": "David McLeod",
+        "Description": "David McLeod, an Australian native, is a digital artist specializing in CGI (computer-generated imagery). CGI is what filmmakers use to create lifelike special effects in movies, but can be used in still imagery as well. Mcleod’s work curiously explores the world of CGI. His animations are mesmerizing. Check them out on his Instagram page.",
+        "Image": "../images/artist1.jpg"
+    },
+    
+    {
+        "name": "Tomma Abts",
+        "Description": "Tomma Abts (born 26 December 1967) is a German-born visual artist known for her abstract oil paintings. Abts won the Turner Prize in 2006. She currently lives and works in London, England.",
+        "Image": "../images/artist2.jpg"
+    
+    },
+    
+    {
+      "name": "julie mehretu",
+      "Description": "Julie Mehretu (born in 1970) is an American contemporary visual artist, known for her multi-layered paintings of abstracted landscapes on a large scale. Her paintings, drawings, and prints depict the cumulative effects of urban sociopolitical changes.",
+      "Image": "../images/artist3.jpg"
+    }
+    
+    ]

@@ -1,0 +1,153 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+	background:rgb(31, 28, 28);
+	
+}
+img{
+	width:350px;
+	height:350px;
+}
+.img-gallery{
+	width:90%;
+	margin:100px auto;
+	display:grid;
+	grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+	grid-gap:30px;
+}
+.img-gallery img{
+	width:100%;
+	cursor:pointer;
+	transition:0.4s;
+	
+}
+.img-gallery img:hover{
+	transform: scale(0.8) rotate(-15deg);
+	border-radius:20px;
+	box-shadow:0 32px 75px rgba(68,77,136,0.2);
+}
+.full-img{
+	width:100%;
+	height:100vh;
+	background:rgba(5,5,20,0.9);
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+	align-items:center;
+	justify-content:center;
+	z-index:2;
+}
+.full-img img{
+	width: 90%;
+	max-width:500px;
+}
+.full-img span{
+	position: absolute;
+	top:5%;
+	right:5%;
+	font-size:30px;
+	color:#fff;
+	cursor:pointer;
+}
+
+h1{
+	margin-top: 40px;
+	font-style: italic;
+	color:white;
+	font-size: 60px;
+	text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.7s;
+}
+
+.nav a {
+  display: block;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 25px;
+}
+
+.nav a:hover {
+  color: #fff;
+  transition: 0.4s;
+}
+
+.nav .close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  margin-left: 50px;
+  font-size: 30px;
+}
+
+.slide a {
+  color: white;
+  font-size: 36px;
+  position: fixed;
+}
+
+ #content {
+  padding: 20px;
+  transition: margin-left 0.7s;
+  overflow: hidden;
+}
+
+#text {
+  width: 90%;
+  padding: 5%;
+} 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/PaintingCss/Painting.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <title>Inked</title>
+</head>
+
+<body>
+
+
+    <div id="main">
+        <div id="content">
+        
+        <span class="slide">
+          <a href="#" onClick="openSlideMenu()">
+          <i class="fas fa-bars"></i>
+          </a>
+        </span>
+        
+        <div id="menu" class="nav">
+          <a href="#" class="close" onClick="closeSlideMenu()">
+          <i class="fas fa-times"></i>
+          </a>
+          <a href="../../../index.html">Home</a>
+          <a href="../views/Artist.html">Artists</a>
+          
+          <a href="../../../views/Category.html">Categories</a>
+          <a href="../../../views/About.html">About</a>
+          <a href="../../../views/ContactUs.html">Contact</a>
+        </div>
+      </div>
+      </div>
+
+
+
+      <h1>Inked</h1>
+      <div class="full-img" id="fullimgbox">
+          <img src="../../../images/inked1.jpg" id="fullimg">
+          <span onclick="closeimg()">X<span>
+      </div>
+      <div class="img-gallery">
+         <img src="../../../images/inked1.jpg" onclick="openfullimg(this.src)"/>
+         <img src="../../../images/inked2.jpg" onclick="openfullimg(this.src)"/>
+         <img src="../../../images/inked3.jpg" onclick="openfullimg(this.src)"/>
+         <img src="../../../images/inked4.jpg" onclick="openfullimg(this.src)"/>
+         <img src="../../../images/inked5.jpg" onclick="openfullimg(this.src)"/>
+         <img src="../../../images/inked6.jpg" onclick="openfullimg(this.src)"/>
+         <img src="../../../images/inked7.jpg" onclick="openfullimg(this.src)"/>
+         <img src="../../../images/inked8.jpg" onclick="openfullimg(this.src)"/>
+         <img src="../../../images/inked9.jpg" onclick="openfullimg(this.src)"/>
+         <img src="../../../images/inked10.jpg" onclick="openfullimg(this.src)"/>
+      </div>
+  
+      <script>
+          var fbox = document.getElementById("fullimgbox");
+          var fullimg = document.getElementById("fullimg");
+          
+          
+          function openfullimg(pic){
+          fbox.style.display="flex";
+          fullimg.src=pic;
+          }
+          function closeimg(){
+              fbox.style.display="none";
+          }
+      
+          </script>
+    <a class="prev" href="../Categories_images/Digital.html">&#10094;</a>
+    <a class="next" href="../Categories_images/Paintings.html">&#10095;</a>
+    <script src="../../../js/Painting.js"></script>
+</body>
+
+</html>
